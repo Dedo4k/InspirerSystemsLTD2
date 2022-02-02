@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Test</title>
+</head>
+<body>
+<button><a href="?lang=ru" th:text="#{ru}"></a></button>
+<button><a href="?lang=en" th:text="#{en}"></a></button>
+<br>
+<h1 th:if="${message != null and not message.isBlank()}" th:text="#{${message}}"></h1>
+<button><a href="/message" th:text="#{press}"></a></button>
+<button><a href="/" th:text="#{back}"></a></button>
+</body>
+</html>
